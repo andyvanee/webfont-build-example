@@ -1,6 +1,8 @@
 # webfont-build-example
 
-Example repo to test building webfont with github actions
+Example repo to test building webfont with github actions.
+
+See webfont in action at <https://andyvanee.github.io/webfont-build-example/index.html>
 
 `bin/generate-fonts.js` includes some hardcoded paths which would need to be
 changed if you want to move things around.
