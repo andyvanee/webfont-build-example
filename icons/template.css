@@ -35,8 +35,4 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-[data-icon]:before {
-    content: attr(data-icon);
-}
-
 /* ICONS */
