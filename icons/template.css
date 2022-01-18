@@ -1,0 +1,42 @@
+:root {
+    --icon-font-family: "webfont";
+    /* ICON_VARS */
+}
+@font-face {
+    font-family: "webfont";
+    font-display: swap;
+    src: url("./webfont.eot?v=__VERSION__");
+    src: url("./webfont.eot?v=__VERSION__#iefix") format("embedded-opentype"),
+        url("./webfont.woff?v=__VERSION__") format("woff"),
+        url("./webfont.ttf?v=__VERSION__") format("truetype"),
+        url("./webfont.svg?v=__VERSION__#webfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "webfont";
+        font-display: swap;
+        src: url("./webfont.svg?v=__VERSION__#webfont") format("svg");
+    }
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: webfont !important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon]:before {
+    content: attr(data-icon);
+}
+
+/* ICONS */

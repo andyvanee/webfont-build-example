@@ -1,0 +1,22 @@
+{
+  "name": "webfont-build-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:andyvanee/webfont-build-example.git",
+  "author": "andyvanee <1andyvanee@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "webfont": "yarn run generate-font; yarn run generate-ttf; yarn run generate-woff; yarn run generate-eot",
+    "generate-font": "node bin/generate-fonts.js",
+    "generate-ttf": "svg2ttf webfont/webfont.svg webfont/webfont.ttf",
+    "generate-woff": "ttf2woff webfont/webfont.ttf webfont/webfont.woff",
+    "generate-eot": "ttf2eot webfont/webfont.ttf webfont/webfont.eot"
+  },
+  "dependencies": {
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^10.0.5",
+    "ttf2eot": "^3.0.0",
+    "ttf2woff": "^3.0.0"
+  }
+}
